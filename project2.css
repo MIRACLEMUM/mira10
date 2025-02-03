@@ -1,0 +1,25 @@
+button{
+    background-color:blue;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: 100px;
+    height: auto;
+    box-shadow: 5px 5px 5px solid white;
+}
+
+button:hover{
+    background-color:green;
+    color:white;
+}
+
+h1{
+    color: white;
+}
+
+input{
+    font-size: 20px;
+    
+
+}
