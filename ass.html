@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment and Reset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: yellow;
+        }
+        .counter {
+            font-size: 3em;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="counter" id="counter">50</div>
+    <button onclick="increment()">Increment</button>
+    <button onclick="resetCounter()">Reset</button>
+
+    <script>
+        let count = 50;
+
+        function increment() {
+            count++;
+            document.getElementById('counter').textContent = count;
+        }
+
+        function resetCounter() {
+            count = 50;
+            document.getElementById('counter').textContent = count;
+        }
+
+        // Optional: Decrement button to reduce the count with the restriction
+        function decrement() {
+            if (count > 50) {
+                count--;
+                document.getElementById('counter').textContent = count;
+            }
+        }
+    </script>
+
+</body>
+</html>

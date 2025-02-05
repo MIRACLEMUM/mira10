@@ -1,6 +1,6 @@
 const body = document.getElementsByTagName('body') [0]
 
-//body.style.backgroundColor = 'green'
+body.style.backgroundColor = ''
 
 function setColor(name) {
     body.style.backgroundColor = name;
@@ -14,7 +14,7 @@ function randomColor() {
     const Green = Math.round(Math.random() * 255)
     const Blue = Math.round(Math.random() * 255)
 
-    const color = `rgb(${red}, ${green}, ${blue})`
+    const color = `rgb(${Red}, ${Green},${Blue})`
     body.style.backgroundColor = color;
 
 
